@@ -198,9 +198,7 @@
         <div class="gift" onclick="openGift()">
 
             <div class="bow"></div>
-
             <div class="lid" id="lid"></div>
-
             <div class="box"></div>
 
         </div>
@@ -220,9 +218,17 @@
             <img src = "balu2.jpeg"
              alt = "hello balu"
              height = "300">
-            <audio autoplay loop>
-              <source src="Yeshanag.mp3" type = "audio/mp3">
+            <button onclick="startBirthday()">🎉 Click to Enter 🎉</button>
+
+            <audio id="music" loop>
+                <source src="music/Yeshanag.mp3" type="audio/mpeg">
             </audio>
+
+            <script>
+            function startBirthday() {
+                document.getElementById("music").play();
+            }
+            </script>
             <p>
               happy birthday my dear best friend ❤️
                 <br><br>
